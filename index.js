@@ -13,7 +13,7 @@ search .addEventListener('click',() =>{
     if(city ==='')
     return;
 
-    fetch('https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={APIkey}').then(response=> response.json()).then(json=>{
+    fetch('https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}').then(response=> response.json()).then(json=>{
 
         if(json.cod === '404'){
             container.style.heigt = '400px';
