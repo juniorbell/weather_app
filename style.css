@@ -102,7 +102,7 @@ body {
 
 }
 
-.weather-box.descricao {
+.weather-box.description {
     color: #06283d;
     font-size: 22px;
     font-weight: 500;
@@ -116,7 +116,7 @@ body {
     margin-top: 30px;
 }
 
-.weather-details .humidade,
+.weather-details .himidity,
 .weather-details.wind {
     display: flex;
     align-items: center;
@@ -125,7 +125,7 @@ body {
 
 }
 
-.weather-details .humidade {
+.weather-details .himidity {
     padding-left: 20px;
     justify-content: flex-end;
 }

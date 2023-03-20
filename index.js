@@ -7,13 +7,13 @@ const error404 =document.querySelector('.not-found');
 
 search .addEventListener('click',() =>{
 
-    const APIKey='0fe3fc1d3a0aae82cb3c7b9bf60b3df7';
+    const APIKey='8ff3fedc32a060ca35f75569ba9d2139';
     const city= document.querySelector('.search-box input').value;
 
     if(city ==='')
     return;
 
-    fetch('https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}').then(response=> response.json()).then(json=>{
+    fetch('https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={APIkey}').then(response=> response.json()).then(json=>{
 
         if(json.cod === '404'){
             container.style.heigt = '400px';
@@ -27,9 +27,9 @@ search .addEventListener('click',() =>{
         error404.classList.remove('fadeIn');
 
         const image = document.querySelector('.weather-box img');
-        const temperatura = document.querySelector('.weather-box .temperatura');
-        const descricao = document.querySelector('.weather-box .descricao');
-        const humidade = document.querySelector('.weather-details .humidade span');
+        const temperature = document.querySelector('.weather-box .temperature');
+        const description = document.querySelector('.weather-box .description');
+        const humidity = document.querySelector('.weather-details .humidity span');
         const wind = document.querySelector('.weather-details .wind span');
 
 
@@ -56,9 +56,9 @@ search .addEventListener('click',() =>{
                     image.src='';
         }
 
-        temperatura.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
-        descricao.innerHTML = `${json.weather[0].descricao}`;
-        humidade.innerHTML = `${json.main.humidity}%`;
+        temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
+        description.innerHTML = `${json.weather[0].description}`;
+        humidity.innerHTML = `${json.main.humidity}%`;
         wind.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
 
         weatherBox.style.display = '';
