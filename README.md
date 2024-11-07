@@ -1,4 +1,4 @@
-# BellPharma
+# Wheater App
 
 Wheather is a worldwide climate consultation application. All you have to do is enter the name of the city or state and the application will provide you with the relevant climate information.
 
