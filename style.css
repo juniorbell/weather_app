@@ -11,8 +11,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(34,193,195);
-    background: linear-gradient(318deg, rgba(34,193,195,1) 0%, rgba(45,175,253,1) 100%);
+    /* background: rgb(34,193,195);
+    background: linear-gradient(318deg, rgba(34,193,195,1) 0%, rgba(45,175,253,1) 100%); */
+    background-image: url(images/img1.jpg);
 }
 
 .container{
